@@ -7,19 +7,47 @@
   <title>Document</title>
 </head>
 <body>
+  <div class="modal" id="exampleModal2" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">WE WANT NORMALCY</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>I want to go outside again.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Modal created with Bootstrap -->
   <!-- In the CSS of Bootstrap elements with the class name "modal" have a display: hidden; rule -->
   <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          
+          <h5 class="modal-title">COVID-19</h5>
+          
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <p>Modal 1 body text goes here.</p>
+          <p>Please just go away.</p>
+          <!-- <div class="modal-body"> -->
+            <h5>For a miracle cure</h5>
+            <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">Magic Wand</a> might give you some hope.</p>
+            <hr>
+            <h5>Otherwise, Find a Doctor</h5>
+            <p><a href="#" class="tooltip-test" title="Tooltip">Your Primary</a> and <a href="#" class="tooltip-test" title="Tooltip">this hospital</a> might save your life.</p>
+          <!-- </div> -->
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -29,13 +57,17 @@
     </div>
   </div>
 
-  
+
 
   <!-- Notice this button has an attribute: "data-target" with a value of "#exampleModal"? -->
   <!-- It uses this value in Bootstrap's JS file to target the specific modal it's suppose to open up.  -->
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
     Launch demo modal 1
   </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2 ">
+    Launch demo modal 2
+  </button>
+
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
